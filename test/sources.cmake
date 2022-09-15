@@ -1,0 +1,49 @@
+set(${PROJECT_NAME}_DOC_TEST_SOURCE
+    ${${PROJECT_NAME}_TEST_DIR}/doctest.cpp
+)
+
+set(${PROJECT_NAME}_UNIT_TEST_BASIC_HEADER
+    ${${PROJECT_NAME}_TEST_DIR}/include_doctest.hpp
+    ${${PROJECT_NAME}_TEST_DIR}/global_resource/dispatcher.hpp
+    ${${PROJECT_NAME}_TEST_DIR}/global_resource/logger.hpp
+    ${${PROJECT_NAME}_TEST_DIR}/global_resource/thread_pool.hpp
+    ${${PROJECT_NAME}_TEST_DIR}/utils/string.hpp
+    ${${PROJECT_NAME}_TEST_DIR}/utils/test_message.hpp
+)
+
+set(${PROJECT_NAME}_UNIT_TEST_BASIC_SOURCE
+    ${${PROJECT_NAME}_TEST_DIR}/core/exception_test.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/detail/string/string_test.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/detail/thread/blocking_pair_queue_test.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/detail/thread/blocking_queue_test.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/detail/thread/thread_pool_test.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/dispatcher_test.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/global_resource/dispatcher.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/global_resource/logger.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/global_resource/thread_pool.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/logger_test.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/manager_test.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/main_basic.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/sink_module/ostream_module_test.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/sink_test.cpp
+)
+
+set(${PROJECT_NAME}_UNIT_TEST_FILE_HEADER
+    ${${PROJECT_NAME}_TEST_DIR}/file_directory.hpp
+    ${${PROJECT_NAME}_TEST_DIR}/include_doctest.hpp
+    ${${PROJECT_NAME}_TEST_DIR}/utils/file.hpp
+    ${${PROJECT_NAME}_TEST_DIR}/utils/file_fixture.hpp
+    ${${PROJECT_NAME}_TEST_DIR}/utils/literals.hpp
+    ${${PROJECT_NAME}_TEST_DIR}/utils/string.hpp
+    ${${PROJECT_NAME}_TEST_DIR}/utils/test_message.hpp
+)
+
+set(${PROJECT_NAME}_UNIT_TEST_FILE_SOURCE
+    ${${PROJECT_NAME}_TEST_DIR}/detail/file/basic_file_test.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/detail/file/file_helper_test.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/file_directory.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/main_file.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/sink_module/basic_file_module_test.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/sink_module/rotation_file_module_test.cpp
+    ${${PROJECT_NAME}_TEST_DIR}/utils/file_fixture.cpp
+)

@@ -1,0 +1,8 @@
+# Build binaries
+build/**
+
+# Personal files
+.vscode/**
+.vs/**
+.clangd
+.cache

@@ -1,0 +1,13 @@
+---
+Language: Cpp
+BasedOnStyle : LLVM
+AccessModifierOffset: -4
+AllowShortIfStatementsOnASingleLine: false
+AlwaysBreakTemplateDeclarations: Yes
+BreakBeforeBraces: Allman
+ColumnLimit: 80
+IndentWidth: 4
+IndentCaseLabels: false
+IndentPPDirectives: BeforeHash
+TabWidth: 4
+UseTab: Never

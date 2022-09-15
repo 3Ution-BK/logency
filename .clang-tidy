@@ -1,0 +1,22 @@
+Checks: "*,\
+    -abseil-*,\
+    -altera-*,\
+    -android-*,\
+    -cppcoreguidelines-pro-bounds-array-to-pointer-decay,\
+    -fuchsia-default-arguments-*,\
+    -fuchsia-overloaded-operator,\
+    -fuchsia-trailing-return,\
+    -hicpp-no-array-decay,\
+    -llvm-*,\
+    -llvmlibc-*,\
+    -modernize-use-trailing-return-type
+"
+
+CheckOptions:
+    - key: cppcoreguidelines-special-member-functions.AllowSoleDefaultDtor
+      value: 1
+    - key: hicpp-special-member-functions.AllowSoleDefaultDtor
+      value: 1
+    - key: misc-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic
+      value : 1
+FormatStyle: 'file'
